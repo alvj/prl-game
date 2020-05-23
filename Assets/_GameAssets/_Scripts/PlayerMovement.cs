@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpVelocity = 10f;
     [SerializeField] float fallMultiplier = 1.5f;
     [SerializeField] float lowJumpMultiplier = 2f;
+    float hInput;
 
     [Space]
 
@@ -23,10 +25,12 @@ public class PlayerMovement : MonoBehaviour
     // Components
     SpriteRenderer sr;
     Rigidbody2D rb;
+    Animator anim;
 
-    private void Start(){
+    private void Awake(){
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update() {
@@ -34,15 +38,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded == true) {
             rb.velocity = Vector2.up * jumpVelocity;
         }
+
+        ManageAnimations();
     }
 
     private void FixedUpdate(){
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        float hInput = Input.GetAxis("Horizontal");
+        hInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
-
-        sr.flipX = hInput > 0.1f ? false : hInput < -0.1f ? true : sr.flipX;
 
         ManageJump();
     }
@@ -55,6 +59,22 @@ public class PlayerMovement : MonoBehaviour
         // If going up and jumping button is released early, multiply gravity to get a lower jump
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump")) {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
+        }
+    }
+
+    private void ManageAnimations() {
+        anim.SetBool("isJumping", !isGrounded);
+
+        if (hInput > 0.1f) {
+            anim.SetBool("isWalking", true);
+            sr.flipX = false;
+        }
+        else if (hInput < -0.1f) {
+            anim.SetBool("isWalking", true);
+            sr.flipX = true;
+        }
+        else {
+            anim.SetBool("isWalking", false);
         }
     }
 }
