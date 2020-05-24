@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
   m_Name: Mareado-escenario
   m_EditorClassIdentifier: 
-  question: "Te sientes mareado por el calor que hace en el escenario, \xBFC\xF3mo
+  question: "Te sientes mareado por el calor que hace en el escenario. \xBFC\xF3mo
     lo previenes?"
   answers:
   - Te metes hielos en la ropa.

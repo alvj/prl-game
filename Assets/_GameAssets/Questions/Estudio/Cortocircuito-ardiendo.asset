@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cortocircuito-ardiendo
   m_EditorClassIdentifier: 
   question: "Hay un equipo que se ha sobrecalentado y tras un cortocircuito est\xE1
-    ardiendo, \xBFque haces? \xBFC\xF3mo prevenimos esta situaci\xF3n de riesgo?"
+    ardiendo. \xBFQu\xE9 haces? \xBFC\xF3mo prevenimos esta situaci\xF3n de riesgo?"
   answers:
   - Revisamos cada cierto tiempo los equipos por si hay que cambiarlos y en caso
     de incendio mantener a todo el mundo alejado, y llamar a los bomberos.

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
   m_Name: Coca-cola fall
   m_EditorClassIdentifier: 
-  question: "Se te ha ca\xEDdo una coca-cola al suelo \xBFQu\xE9 haces?"
+  question: "Se te ha ca\xEDdo una coca-cola al suelo. \xBFQu\xE9 haces?"
   answers:
-  - Lo tapo con la alfombra y me voy corriendo
-  - "Llamo al subordinado y que se coma \xE9l el marr\xF3n"
-  - 'Aviso a limpieza para que lo recojan y espero a que lleguen protegiendo el lugar '
-  - "Lo recojo con un pa\xF1uelo "
+  - Lo tapo con la alfombra y me voy corriendo.
+  - "Llamo al subordinado y que se coma \xE9l el marr\xF3n."
+  - Aviso a limpieza para que lo recojan y espero a que lleguen protegiendo el lugar.
+  - "Lo recojo con un pa\xF1uelo. "
   correctAnswer: 2
   explanation: 'Por culpa de suelos mojados, cables o elementos de equipos de sonido
     que pueden provocar tropiezos, pueden provocar contusiones, esguinces o fracturas.

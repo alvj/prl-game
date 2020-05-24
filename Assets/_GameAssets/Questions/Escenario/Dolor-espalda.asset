@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
   m_Name: Dolor-espalda
   m_EditorClassIdentifier: 
-  question: "Est\xE1s levantando mucho peso en el escenario y te duele la espalda
+  question: "Est\xE1s levantando mucho peso en el escenario y te duele la espalda.
     \xBFQu\xE9 deber\xEDas utilizar para prevenir esto?"
   answers:
   - "Utilizar la faja de protecci\xF3n."

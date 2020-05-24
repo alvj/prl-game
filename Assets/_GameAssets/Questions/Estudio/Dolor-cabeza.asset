@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dolor-cabeza
   m_EditorClassIdentifier: 
   question: "Te duele la cabeza por estar delante del ordenador en el estudio de
-    trabajo \xBFQu\xE9 har\xEDas?"
+    trabajo. \xBFQu\xE9 har\xEDas?"
   answers:
   - Seguir trabajando porque es lo primero.
   - "Me pongo a hablar por tel\xE9fono mientras me doy una vuelta de 20 minutos."
@@ -21,10 +21,10 @@ MonoBehaviour:
   - Descansar un rato sentado en una silla u taburete, y tomarte un paracetamol.
   correctAnswer: 3
   explanation: "La fatiga mental es la p\xE9rdida de eficiencia del funcionamiento
-    de la mente como consecuencia de la actividad desarrollada\r\n\r\nEl esfuerzo
+    de la mente como consecuencia de la actividad desarrollada\r.\n\r\nEl esfuerzo
     mental que supone el desempe\xF1o de esta tarea puede derivar en fatiga mental. 
     Otro factor a considerar es el horario de trabajo. El trabajo nocturno puede
     traer como consecuencias la alteraci\xF3n de los ritmos biol\xF3gicos, falta
     y trastornos del sue\xF1o, problemas asociados a la salud f\xEDsica y mental,
     adem\xE1s de dificultad para una adecuada conciliaci\xF3n de la actividad laboral
-    con la vida social y familiar"
+    con la vida social y familiar."

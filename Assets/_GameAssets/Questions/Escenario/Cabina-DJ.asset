@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Cabina-DJ
   m_EditorClassIdentifier: 
   question: "Tienes que subir a una cabina de disc jockey, pero esta muy alta y no
-    hay escaleras, \xBFque har\xEDas para subirte sin riesgos?"
+    hay escaleras. \xBFQu\xE9 har\xEDas para subirte sin riesgos?"
   answers:
   - De un salto porque tengo muy buen equilibrio.
-  - Intento conseguir unas escaleras de mano
+  - Intento conseguir unas escaleras de mano.
   - "Llamo a un compa\xF1ero para que me impulse."
   - Bajo todas las cosas tirando una cuerda para ponerlo en un sitio mas accesible.
   correctAnswer: 1
