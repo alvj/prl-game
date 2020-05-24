@@ -57,23 +57,23 @@ public class QuestionManager : MonoBehaviour
 
     public void CheckAnswer(int answer)
     {
-        if (answer == question.GetCorrectAnswer())
-        {
-            // Change to green color
-            ChangeButtonColor(answerButtons[answer], green);
-            audioSource.PlayOneShot(correctAudio);
+        if (!guessedCorrect){
+            if (answer == question.GetCorrectAnswer()) {
+                // Change to green color
+                ChangeButtonColor(answerButtons[answer], green);
+                audioSource.PlayOneShot(correctAudio);
 
-            guessedCorrect = true;
+                guessedCorrect = true;
 
-            player.GetComponent<Animator>().SetBool("correctAnswer", true);
+                player.GetComponent<Animator>().SetBool("correctAnswer", true);
 
-            Invoke("CorrectAnswer", 1.5f);
-        }
-        else if (answer != question.GetCorrectAnswer() && !guessedCorrect)
-        {
-            // Change to red color
-            ChangeButtonColor(answerButtons[answer], red);
-            audioSource.PlayOneShot(errorAudio);
+                Invoke("CorrectAnswer", 1.5f);
+            }
+            else if (answer != question.GetCorrectAnswer() && !guessedCorrect) {
+                // Change to red color
+                ChangeButtonColor(answerButtons[answer], red);
+                audioSource.PlayOneShot(errorAudio);
+            }
         }
     }
 
@@ -91,8 +91,16 @@ public class QuestionManager : MonoBehaviour
 
     public void EndQuestion()
     {
+        ResetButtonsColor();
+        guessedCorrect = false;
         explanationObject.SetActive(false);
         player.SetCanMove(true);
+    }
+
+    void ResetButtonsColor() {
+        for (int i = 0; i < answerButtons.Length; i++) {
+            ChangeButtonColor(answerButtons[i], defaultButtonColor);
+        }
     }
 
     public void Hover()
