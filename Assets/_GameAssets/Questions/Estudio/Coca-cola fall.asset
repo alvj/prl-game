@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: Coca-cola fall
+  m_EditorClassIdentifier: 
+  question: "Se te ha ca\xEDdo una coca-cola al suelo \xBFQu\xE9 haces?"
+  answers:
+  - 'Lo t apo con la alfombra y me voy corriendo '
+  - "Llamo al subordinado y que se coma \xE9l el marr\xF3n"
+  - 'Aviso a limpieza para que lo recojan y espero a que lleguen protegiendo el lugar '
+  - "Lo recojo con un pa\xF1uelo "
+  correctAnswer: 2
+  explanation: 'Por culpa de suelos mojados, cables o elementos de equipos de sonido
+    que pueden provocar tropiezos, pueden provocar contusiones, esguinces o fracturas.
+
+    
+
+    En
+    el local se genera residuos de distinta naturaleza, siendo habitual que haya
+    vasos o cascos que caen accidentalmente, cristales rotos, etc... Hya que tener
+    en cuenta esto al desplazar objetos por el local u/o escenario.'
