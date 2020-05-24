@@ -5,7 +5,7 @@ using UnityEngine.Animations;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [Header("Move Settings")]
     [SerializeField] float speed = 5f;
@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float fallMultiplier = 1.5f;
     [SerializeField] float lowJumpMultiplier = 2f;
     float hInput;
+    bool canMove = true;
 
     [Space]
 
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update() {
         // Jump
-        if (Input.GetButtonDown("Jump") && isGrounded == true) {
+        if (Input.GetButtonDown("Jump") && isGrounded == true && canMove == true) {
             rb.velocity = Vector2.up * jumpVelocity;
         }
 
@@ -45,8 +46,13 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate(){
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        hInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
+        if (canMove) {
+            hInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
+        }
+        else {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
 
         ManageJump();
     }
@@ -65,16 +71,20 @@ public class PlayerMovement : MonoBehaviour
     private void ManageAnimations() {
         anim.SetBool("isJumping", !isGrounded);
 
-        if (hInput > 0.1f) {
+        if (hInput > 0.1f && canMove) {
             anim.SetBool("isWalking", true);
             sr.flipX = false;
         }
-        else if (hInput < -0.1f) {
+        else if (hInput < -0.1f && canMove) {
             anim.SetBool("isWalking", true);
             sr.flipX = true;
         }
         else {
             anim.SetBool("isWalking", false);
         }
+    }
+
+    public void SetCanMove(bool b) {
+        canMove = b;
     }
 }

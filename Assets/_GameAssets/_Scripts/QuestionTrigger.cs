@@ -9,7 +9,8 @@ public class QuestionTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.CompareTag("Player")) {
-            qm.DisplayQuestion(question);
+            qm.GetQuestion(question);
+            GameObject.Destroy(gameObject);
         }
     }
 }
