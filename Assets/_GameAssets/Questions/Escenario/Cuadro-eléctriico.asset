@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
-  m_Name: "Cuadro-el\xE9ctriico"
+  m_Name: "Cuadro-ele\u0301ctriico"
   m_EditorClassIdentifier: 
   question: "Tienes que utilizar el cuadro el\xE9ctrico para arreglar un cable y
     te pasa corriente. \xBFPodr\xEDas haberlo evitado con alg\xFAn EPI?"
@@ -23,3 +23,4 @@ MonoBehaviour:
   explanation: "Lo m\xE1s importante es no intentar reparar aver\xEDas si no se tienen
     conocimientos sobre ello, es mejor avisar a un responsable de sala, en caso de
     tener conocimientos utilizar los EPI'S necesarios como guantes aislantes."
+  isLastLevelQuestion: 0

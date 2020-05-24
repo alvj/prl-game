@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Animations;
+using UnityEngine.SceneManagement;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -95,6 +96,10 @@ public class QuestionManager : MonoBehaviour
         guessedCorrect = false;
         explanationObject.SetActive(false);
         player.SetCanMove(true);
+
+        if (question.GetIsLastQuestion()) {
+            ChangeScene();
+        }
     }
 
     void ResetButtonsColor() {
@@ -111,5 +116,9 @@ public class QuestionManager : MonoBehaviour
     public void Click()
     {
         audioSource.PlayOneShot(clickAudio);
+    }
+
+    void ChangeScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

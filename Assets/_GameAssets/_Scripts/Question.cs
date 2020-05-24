@@ -13,6 +13,8 @@ public class Question : ScriptableObject
     [TextArea(4, 30)]
     [SerializeField] string explanation;
 
+    [SerializeField] bool isLastLevelQuestion;
+
     public string GetQuestion() {
         return question;
     }
@@ -27,5 +29,9 @@ public class Question : ScriptableObject
 
     public string GetExplanation() {
         return explanation;
+    }
+
+    public bool GetIsLastQuestion() {
+        return isLastLevelQuestion;
     }
 }

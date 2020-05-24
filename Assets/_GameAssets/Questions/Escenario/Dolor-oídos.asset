@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
-  m_Name: "Dolor-o\xEDdos"
+  m_Name: "Dolor-oi\u0301dos"
   m_EditorClassIdentifier: 
   question: "Est\xE1n probando los altavoces del escenario y te pitan los o\xEDdos.
     \xBFQue equipamiento utilizar\xEDas?"
@@ -24,3 +24,4 @@ MonoBehaviour:
     mucho ruido, ya sea por una fiesta o celebraci\xF3n o incluso pruebas de sonido,
     estos pueden llevar a situaciones de estr\xE9s o dolor de o\xEDdos, por eso es
     obligatorio el utilizar tapones u orejeras."
+  isLastLevelQuestion: 1
