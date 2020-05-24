@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Animations;
 
 public class QuestionManager : MonoBehaviour
     {
@@ -39,6 +40,7 @@ public class QuestionManager : MonoBehaviour
         if (answer == question.GetCorrectAnswer()) {
             ChangeButtonColor(answerButtons[answer], Color.green);
             guessedCorrect = true;
+            player.GetComponent<Animator>().SetBool("correctAnswer", true);
             Invoke("CorrectAnswer", 1.5f);
         } else if (answer != question.GetCorrectAnswer() && !guessedCorrect) {
             ChangeButtonColor(answerButtons[answer], Color.red);
@@ -50,6 +52,7 @@ public class QuestionManager : MonoBehaviour
     }
 
     void CorrectAnswer() {
+        player.GetComponent<Animator>().SetBool("correctAnswer", false);
         questionObject.SetActive(false);
         explanationObject.SetActive(true);
     }
