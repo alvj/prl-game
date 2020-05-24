@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
-    private void Awake(){
+    private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
         ManageAnimations();
     }
 
-    private void FixedUpdate(){
+    private void FixedUpdate() {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         if (canMove) {
