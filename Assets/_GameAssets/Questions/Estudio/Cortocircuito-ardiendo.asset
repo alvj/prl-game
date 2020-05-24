@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: Cortocircuito-ardiendo
+  m_EditorClassIdentifier: 
+  question: "Hay un equipo que se ha sobrecalentado y tras un cortocircuito esta
+    ardiendo, \xBFque haces? \xBFcomo prevenimos esta situaci\xF3n de riesgo?"
+  answers:
+  - Revisamos cada cierto tiempo los equipos por si hay que cambiarlos y en caso
+    de incendio mantener a todo el mundo alejado, y llamar a los bomberos.
+  - "Irse corriendo de ah\xED y avisar gritando \xA1Fuego!"
+  - Ir a por un cubo de agua y tirarlo encima.
+  - Apagar los plomos y abanicarlo con la chaqueta.
+  correctAnswer: 0
+  explanation: "Para prevenir cortocircuitos hay que mantener el cuadro el\xE9ctrico
+    limpio y ordenado, tambi\xE9n est\xE1 prohibido fumar cerca de estos ya que una
+    colilla mal apagada puede llegar a provocar un gran desastre. Otra manera de
+    poder prevenir esto es teniendo extintores o recursos que puedan servir para
+    apagar un incendio."

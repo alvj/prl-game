@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: Dolor-cabeza
+  m_EditorClassIdentifier: 
+  question: "Te duele la cabeza por estar delante del ordenador en el estudio de
+    trabajo \xBFQu\xE9 har\xEDas?"
+  answers:
+  - Seguir trabajando porque es lo primero.
+  - "Me pongo a hablar por tel\xE9fono mientras me doy una vuelta de 20 minutos."
+  - "Me pongo a mirar el m\xF3vil a ver si se me pasa."
+  - Descansar un rato sentado en una silla u taburete, y tomarte un paracetamol.
+  correctAnswer: 3
+  explanation: "La fatiga mental es la p\xE9rdida de eficiencia del funcionamiento
+    de la mente como consecuencia de la actividad desarrollada\r\n\r\nEl esfuerzo
+    mental que supone el desempe\xF1o de esta tarea puede derivar en fatiga mental. 
+    Otro factor a considerar es el horario de trabajo. El trabajo nocturno puede
+    traer como consecuencias la alteraci\xF3n de los ritmos biol\xF3gicos, falta
+    y trastornos del sue\xF1o, problemas asociados a la salud f\xEDsica y mental,
+    adem\xE1s de dificultad para una adecuada conciliaci\xF3n de la actividad laboral
+    con la vida social y familiar"

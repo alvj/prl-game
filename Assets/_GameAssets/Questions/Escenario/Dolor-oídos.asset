@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: "Dolor-o\xEDdos"
+  m_EditorClassIdentifier: 
+  question: "Est\xE1n probando los altavoces del escenario y te pitan los o\xEDdos
+    \xBFQue equipamiento utilizar\xEDas?"
+  answers:
+  - Tapones u orejeras.
+  - Un gorro de lana.
+  - "D\xE1ndote la vuelta."
+  - Saliendo de la sala, pero te pierdes la prueba de sonido y no sabes que hacer.
+  correctAnswer: 0
+  explanation: "Los escenarios al igual que discotecas son lugares donde se produce
+    mucho ruido, ya sea por una fiesta o celebraci\xF3n o incluso pruebas de sonido,
+    estos pueden llevar a situaciones de estr\xE9s o dolor de o\xEDdos, por eso es
+    obligatorio el utilizar tapones u orejeras."

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: Altavoz-suelto
+  m_EditorClassIdentifier: 
+  question: "Hay un altavoz suelto y corre el peligro de caerse encima tuya, \xBFC\xF3mo
+    puedes prevenir esa situaci\xF3n y protegerte?"
+  answers:
+  - "Revisar todo el material a utilizar y ponerse las medidas de protecci\xF3n correspondientes
+    en caso de tener que asegurarlo."
+  - Alejarte de esa zona y esperar a que otro lo vea.
+  - Sujetarlo con cinta aislante.
+  - Me pongo un casco y sigo trabajando.
+  correctAnswer: 0
+  explanation: "La mala sujeci\xF3n de altavoces o equipos de sonido puede tener
+    como consecuencia su ca\xEDda sobre un trabajador o incluso sobre los clientes.\r\n\r\nEn
+    ocasiones es necesario trasladar los equipos utilizados con riesgo de ca\xEDda
+    de los mismos mientras se realiza la tarea, favorecido por manipulaciones con
+    manos h\xFAmedas, restos de suciedad en los equipos o su propia forma o tama\xF1o
+    que impiden un agarre seguro"

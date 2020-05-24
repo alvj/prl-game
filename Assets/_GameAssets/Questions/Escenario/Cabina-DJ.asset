@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ecdb4fd9f7eda4ab96603089571fbc, type: 3}
+  m_Name: Cabina-DJ
+  m_EditorClassIdentifier: 
+  question: "Tienes que subir a una cabina de disc jockey, pero esta muy alta y no
+    hay escaleras, \xBFque har\xEDas para subirte sin riesgos?"
+  answers:
+  - De un salto porque tengo muy buen equilibrio.
+  - Intento conseguir unas escaleras de mano
+  - "Llamo a un compa\xF1ero para que me impulse."
+  - Bajo todas las cosas tirando una cuerda para ponerlo en un sitio mas accesible.
+  correctAnswer: 1
+  explanation: "Para evitar riesgos por ca\xEDdas ya sea a distinto o mismo nivel
+    se deber\xE1 usar escaleras, rampas o desniveles y comprobar su estado previamente.
+    Siempre es necesario tener precauci\xF3n y no prisas. "
