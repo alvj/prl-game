@@ -18,7 +18,7 @@ MonoBehaviour:
   - Seguir trabajando porque es lo primero.
   - "Me pongo a hablar por tel\xE9fono mientras me doy una vuelta de 20 minutos."
   - "Me pongo a mirar el m\xF3vil a ver si se me pasa."
-  - Descansar un rato sentado en una silla u taburete, y tomarte un paracetamol.
+  - Descansar un rato sentado en una silla o taburete, y tomarte un paracetamol.
   correctAnswer: 3
   explanation: "La fatiga mental es la p\xE9rdida de eficiencia del funcionamiento
     de la mente como consecuencia de la actividad desarrollada\r.\n\r\nEl esfuerzo
@@ -28,3 +28,4 @@ MonoBehaviour:
     y trastornos del sue\xF1o, problemas asociados a la salud f\xEDsica y mental,
     adem\xE1s de dificultad para una adecuada conciliaci\xF3n de la actividad laboral
     con la vida social y familiar."
+  isLastLevelQuestion: 0

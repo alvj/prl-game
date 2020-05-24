@@ -94,12 +94,14 @@ public class QuestionManager : MonoBehaviour
     {
         ResetButtonsColor();
         guessedCorrect = false;
+        if (question.GetIsLastQuestion()) {
+            ChangeScene();
+            return;
+        }
+
         explanationObject.SetActive(false);
         player.SetCanMove(true);
 
-        if (question.GetIsLastQuestion()) {
-            ChangeScene();
-        }
     }
 
     void ResetButtonsColor() {
